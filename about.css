@@ -79,6 +79,162 @@ main {
     /* Adjust space above the footer */
 }
 
+main {
+    /* max-width: 500px; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about_img img{
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block; /*Ensures the image is centered when used with margin: 0 auto */
+    padding: 160px; 
+     margin-left: auto;
+    margin-right: auto;
+}
+
+.about_info h3 {
+    font-size: 1.5em;
+    margin: -86px 30px 30px 100px;
+    text-align: left;
+}
+
+.about_info p {
+    font-size: 1.2em;
+    color: #aff8ff;
+    margin: 0 30px 30px 100px;
+    text-align: left;
+}
+
+/* .carousel {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+
+}
+
+.carousel-item.active {
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+
+.carousel p {
+    font-size: 1.5em;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #9c0dc7;
+    font-size: 2em;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+} */
+
+
+.carousel {
+    margin-top: 200px;
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Optional: Restrict the width of the carousel */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #a709bc; /* Background color for the rectangle */
+    border-radius: 15px;
+    padding: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for depth */
+}
+
+.carousel-item {
+    display: none;
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.carousel-item.active {
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+
+.carousel p {
+    font-size: 1.5em;
+    color: #ffffff; /* Font color for quotes */
+    padding: 10px;
+    text-align: center; /* Center the quotes within the rectangle */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 2em;
+    color: #000000; /* Color for the arrows */
+    background: none;
+    border: none;
+}
+
+.carousel-control-prev::before, .carousel-control-next::before {
+    content: '';
+    display: inline-block;
+    border: solid #000000; /* Arrow color */
+    border-width: 0 4px 4px 0;
+    padding: 10px;
+}
+
+.carousel-control-prev::before {
+    transform: rotate(135deg); /* Left arrow */
+}
+
+.carousel-control-next::before {
+    transform: rotate(-45deg); /* Right arrow */
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: -130px;
+}
+
 /* Footer */
 footer {
     background-color: rgb(30, 53, 89);
