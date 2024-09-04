@@ -109,56 +109,6 @@ main {
     text-align: left;
 }
 
-/* .carousel {
-    margin-top: 30px;
-    position: relative;
-    width: 100%;
-}
-
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel-item {
-    display: none;
-    position: absolute;
-    width: 100%;
-    transition: opacity 0.5s ease-in-out;
-    opacity: 0;
-
-}
-
-.carousel-item.active {
-    display: block;
-    position: relative;
-    opacity: 1;
-}
-
-.carousel p {
-    font-size: 1.5em;
-    color: #ffffff;
-    padding: 30px;
-}
-
-.carousel-control-prev, .carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #9c0dc7;
-    font-size: 2em;
-}
-
-.carousel-control-prev {
-    left: 10px;
-}
-
-.carousel-control-next {
-    right: 10px;
-} */
-
 
 .carousel {
     margin-top: 200px;
@@ -264,6 +214,20 @@ footer {
     font-size: 1.2rem;
 }
 
+.footer .icon  {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .icon img {
+    color: aliceblue;
+    transition: color 0.3s ease;
+    width: 50px;
+    height: auto;
+    padding: 0 20px 0 20px;
+}
+
 .footer ul {
     list-style-type: none;
     padding: 0;
@@ -278,6 +242,7 @@ footer {
 .footer ul li a:hover {
     color: #df8599;
 }
+
 
 footer .footer-text {
     align-items: center;
