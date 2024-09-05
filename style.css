@@ -18,8 +18,9 @@ nav {
     justify-content: space-around;
     background-color: #00539b;
     align-items: center;
-    height: 60px;
+    height: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 1px #00c8ff;
 }
 
 nav ul {
@@ -331,5 +332,53 @@ footer .footer-text {
     padding: 12px 0;
 }
 
-/* responsive design */
+@media (max-width: 768px) {
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .firstSection>div {
+        width: 100%;
+    }
 
+    .leftSection {
+        text-align: center;
+    }
+
+    .leftSection .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftSection .btn1, .leftSection .btn2, .leftSection .btn3 {
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    .secondSection .box {
+        flex-direction: column;
+    }
+
+    .vertical {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar li {
+        margin: 10px 0;
+    }
+}
