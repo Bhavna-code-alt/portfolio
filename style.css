@@ -224,28 +224,45 @@ main hr {
 
 .vertical-title {
     position: relative;
-    top: -200px;
+    top: -166px;
     width: 540px;
     font-size: 30px;
-    margin: 90px 0  0 100px;
+    margin: 53px 0  0 100px;
 }
 
-.vertical-desc {
+.vertical-desc{
     position: relative;
-    top: -176px;
+    top: -160px;
     color: #84ccfc;
     width: 800px;
     font-size: 20px;
-    margin: 10px 120px;
+    margin: 20px 120px;
     line-height: 28px;
 }
 
-.vertical .first {
-    top: -245px;
+.vertical-desc span {
+    display: block;
+    padding-left: 20px; /* Space for the * */
+    text-indent: -2px; /* Align text under the first word */
+    position: relative;
+    margin-bottom: -20px; /* Adjust this value to control the gap between lines */
 }
 
-.vertical .first-desc {
-    top: -225px;
+.vertical-desc span::before {
+    content: "*"; /* Add the * symbol */
+    position: absolute;
+    left: 0; /* Align the * at the left */
+    top: 0;
+    font-weight: bold;
+    color: #84ccfc;
+}
+
+.vertical .first {
+    top: -210px;
+}
+
+.first-desc {
+    top: -210px;
 }
 
 
@@ -313,3 +330,6 @@ footer .footer-text {
     color: rgb(144, 140, 140);
     padding: 12px 0;
 }
+
+/* responsive design */
+
